@@ -1,2 +1,35 @@
 fxdgrfsdxgjhkvgmjnfdzsgry67uyjhgfdeaw3ersfgdbv
 Чернова Анастасия
+
+
+#include <iostream>
+#include <stdlib.h>
+using namespace ::std;
+
+float obem(float a, float b, float c);
+float poverh(float a, float b, float c);
+
+void main()
+{
+	system("chcp 1251");
+	cout << "Программа находит объем и площадь поверхности параллелепипеда ";
+	float S, V, a, b, c;
+	cout << "Введите длину, ширину и высоту через пробел " << endl;
+	cin >> a >> b >> c; 
+	V = obem(a, b, c);
+	S = poverh(a, b, c);
+	cout << "Объем параллелепипеда " << V << endl;
+	cout << "Площадь поверхности параллелепипеда " << S << endl;
+}
+float obem(float a, float b, float c)
+{
+	float V;
+	V = (a * b) * c; 
+	return V;
+}
+float poverh(float a, float b, float c)
+{
+	float S;
+	S = 2 * (a * b) + 2 * (b * c) + 2 * (a * c);
+	return S;
+}
