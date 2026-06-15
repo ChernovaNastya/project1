@@ -2,7 +2,7 @@ fxdgrfsdxgjhkvgmjnfdzsgry67uyjhgfdeaw3ersfgdbv
 Чернова Анастасия
 
 
-#include <iostream>
+#include <iostream> // комментарий
 #include <stdlib.h>
 using namespace ::std;
 
